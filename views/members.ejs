@@ -1,0 +1,21 @@
+<%- include("templates/header") %> 
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Hi, <%= name %>
+        <form action='/logout' method='DELETE'><button class="btn btn-primary">Sign Out</button></form>
+    </h2>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img id="cat-img" src="/cat/1" style='width:250px;'>
+          </div>
+          <div class="col-sm">
+            <img id="cat-img" src="/cat/2" style='width:250px;'>
+          </div>
+          <div class="col-sm">
+            <img id="cat-img" src="/cat/3" style='width:250px;'>
+          </div>
+        </div>
+      </div>
+</div>
+<%- include("templates/footer") %> 
