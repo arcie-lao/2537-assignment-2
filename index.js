@@ -203,12 +203,7 @@ app.post('/loggingin', async (req,res) => { //done
 		return;
 	}
 	else {
-        var html = `
-            Invalid email/password combination
-
-            <a href=\"/login\">Try again</a>
-        `;
-        res.send(html);
+        res.render("incorrect-login");
         return;
 	}
 });
